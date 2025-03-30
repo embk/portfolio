@@ -1,0 +1,170 @@
+/* Standard-Stile und Basisanpassungen */
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 14px;
+}
+
+canvas {
+  display: block;
+  /* max-width: 100%; */
+  image-rendering: pixelated;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  padding: 20px;
+  border-right: 1px solid rgba(228, 11, 138, 0.2);
+  overflow: auto;
+}
+
+body {
+  margin-left: 280px;
+}
+
+div.option {
+  margin: 30px 0 0 0;
+}
+
+div.option.grid {
+  display: flex;
+  /* align-items: center; */
+}
+
+#show-grid {
+  margin-left: 10px;
+}
+
+/* sidebar options*/
+select,
+input {
+  padding: 8px 0;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  background-color: transparent;
+  /* color: #ffffff; */
+  text-decoration: none;
+  /* width: 80%; */
+  font-size: 14px;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 8px 8px;
+  background-color: transparent;
+  border: 2px solid #0f0f0f;
+  border-radius: 6rem;
+  text-decoration: none;
+  width: 80%;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ef5350;
+}
+
+#canvas-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5px 20px 20px 20px;
+  overflow-x: auto; /* Ermöglicht das horizontale Scrollen des gesamten Containers */
+  padding-bottom: 20px;
+}
+
+#color-info {
+  flex-shrink: 0;
+  width: 300px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin-left: 20px; /* Abstand zum Canvas */
+  height: auto; /* Höhe dynamisch anpassen */
+  overflow-y: auto;
+}
+
+.color-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex-shrink: 0; /* Verhindert, dass das Swatch verkleinert wird */
+
+  cursor: pointer;
+}
+
+.color-label {
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.cell {
+  cursor: pointer;
+}
+
+.selected-color {
+  outline: 2px solid #ef5350; /* Rote Umrandung */
+}
+
+@media only screen and (max-width: 699px) {
+  #sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    padding: 10px;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #canvas-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+    overflow-x: visible;
+  }
+
+  .size {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 10px;
+  }
+
+  #color-info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

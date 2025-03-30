@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="93.750046"
+   width="93.750008"
+   data-name="Layer 1"
+   viewBox="0 0 90.000007 90.000044"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="save-button.svg"
+   style="fill:#000000"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Artboard 18</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2160"
+     inkscape:window-height="1372"
+     id="namedview8"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.36"
+     inkscape:cx="46.875"
+     inkscape:cy="46.875"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <title
+     id="title2">Artboard 18</title>
+  <path
+     d="M 89.18,15.820046 74.18,0.82004566 A 2.81,2.81 0 0 0 72.18,4.5658626e-5 H 8.44 A 8.45,8.45 0 0 0 0,8.4400457 V 81.560046 a 8.45,8.45 0 0 0 8.44,8.44 h 73.12 a 8.45,8.45 0 0 0 8.44,-8.44 v -63.75 a 2.81,2.81 0 0 0 -0.82,-1.99 z M 29.06,5.6300457 H 60.94 V 19.690046 a 2.82,2.82 0 0 1 -2.81,2.81 H 31.88 a 2.82,2.82 0 0 1 -2.81,-2.81 z M 72.19,84.380046 H 17.81 v -33.75 a 2.82,2.82 0 0 1 2.81,-2.81 h 48.76 a 2.82,2.82 0 0 1 2.81,2.81 z m 12.19,-2.81 a 2.82,2.82 0 0 1 -2.81,2.81 h -3.76 v -33.75 a 8.45,8.45 0 0 0 -8.44,-8.44 H 20.63 a 8.45,8.45 0 0 0 -8.44,8.44 v 33.75 H 8.44 a 2.82,2.82 0 0 1 -2.81,-2.81 V 8.4400457 a 2.82,2.82 0 0 1 2.81,-2.81 h 15 V 19.690046 a 8.45,8.45 0 0 0 8.44,8.44 h 26.25 a 8.45,8.45 0 0 0 8.44,-8.44 V 5.6300457 H 71 L 84.38,19.000046 Z m -20.63,-5.16 h -37.5 c -3.72,0 -3.72,-5.62 0,-5.62 h 37.5 c 3.72,-0.01 3.72,5.62 0,5.62 z m 0,-15 h -37.5 c -3.72,0 -3.72,-5.62 0,-5.62 h 37.5 c 3.72,-0.01 3.72,5.62 0,5.62 z"
+     id="path4"
+     style="fill:#ff00ff;fill-opacity:1"
+     inkscape:connector-curvature="0" />
+</svg>

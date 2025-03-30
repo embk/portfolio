@@ -1,0 +1,110 @@
+body {
+  font-family: Verdana, sans-serif;
+  font-weight: 400;
+  color: #ff00ff;
+  background-color: #313440;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 2px;
+  font-size: 52px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff00ff;
+}
+
+#lang {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  font-size: 20px;
+}
+
+#pinteresticon {
+  height: 25px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+#home-bt {
+  height: 35px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+#loom {
+  width: 200px;
+  padding: 30px 0;
+}
+
+#enLang {
+  text-decoration: underline;
+}
+
+#deLang {
+  text-decoration: underline;
+}
+
+.content {
+  margin: 30px !important;
+  color: #ffffff;
+}
+
+.centerh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.padding-bt-30 {
+  padding-bottom: 30px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #ff00ff;
+  font-size: 16px;
+  padding: 8px 20px 8px 20px;
+  border: solid #ff00ff 2px;
+  text-decoration: none;
+  background-color: #313440;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #424657;
+}
+
+.sticky {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #313440;
+  padding: 10px;
+}
+
+.sticky a {
+  display: inline-block;
+  padding: 20px 16px;
+}

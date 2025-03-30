@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="weaving">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Woven Patterns</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <section class="options">
+
+    <div class="option">
+      <img src="IMAGES/save-button.svg" alt="save-button" id="savePng" onclick="saveToPng()">
+      <a href="info.html"><img src="IMAGES/info-button.svg" alt="info-button" id="info-button"></a>
+    </div>
+
+    <br>
+
+    <div class="option">
+      <label>HEDDLE</label>
+      <select id="chooseDent">
+        <option value="40">20/10 (5/″)</option>
+        <option value="60">30/10 (8/″)</option>
+        <option value="80">40/10 (10/″)</option>
+        <option value="100">50/10 (12/″)</option>
+        <option value="120" selected>60/10 (15/″)</option>
+        <option value="160">80/10 (20/″)</option>
+      </select>
+    </div>
+
+    <br>
+
+
+
+    <div class="option">
+      <label>NO. OF COLORS IN PATTERN</label>
+      <select id="numberColors">
+        <option value="2">max 2</option>
+        <option value="3">max 3</option>
+        <option value="4">max 4</option>
+        <option value="5" selected> max 5</option>
+      </select>
+    </div>
+
+
+    <div class="option">
+      <span>COLOR 1</span><input type="color" id="col1" value="#313400">
+    </div>
+    <div class="option">
+      <span>COLOR 2</span><input type="color" id="col2" value="#313400">
+    </div>
+    <div class="option">
+      <span>COLOR 3</span><input type="color" id="col3" value="#313400">
+    </div>
+    <div class="option">
+      <span>COLOR 4</span><input type="color" id="col4" value="#313400">
+    </div>
+    <div class="option">
+      <span>COLOR 5</span><input type="color" id="col5" value="#313400">
+    </div>
+
+    <br>
+
+    <div class="option">
+      <button type="button" class="btn patternBtn" id="randCol" onclick="randomColor()">RANDOM COLORS</button>
+    </div>
+
+    <br>
+
+    <div class="option">
+      <label>NO. OF REPEATING WARP</label>
+      <select id="chooseNumRepWarp">
+        <option value="2">2</option>
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+
+    <div class="option">
+      <label>NO. OF REPEATING WEFT</label>
+      <select id="chooseNumRepWeft">
+        <option value="2">2</option>
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+
+    <br>
+
+
+    <div class="option">
+      <button type="button" class="btn patternBtn" id="patternBtn" onclick="makePattern()">GENERATE PATTERN</button>
+    </div>
+
+    <br>
+
+    <div class="option">
+      <button type="button" class="btn patternBtn" id="fixWarp" onclick="fixedWarp()">GENERATE PATTERN FIX WARP</button>
+    </div>
+
+    <br>
+
+    <div class="option option-checkbox">
+      <label>SHOW WEAVE UNIT</label>
+      <input type="checkbox" name="rapport" id="check" />
+    </div>
+
+    <br>
+
+
+  </section>
+
+
+  <canvas id="myCanvas">
+    Your browser does not support the HTML5 canvas tag.
+  </canvas>
+
+
+  <script src="JS/sketch.js"></script>
+  <script src="JS/script.js"></script>
+
+</body>
+
+</html>

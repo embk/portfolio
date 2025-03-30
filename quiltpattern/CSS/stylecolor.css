@@ -1,0 +1,280 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+canvas,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+footer,
+section {
+  display: block;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #313440;
+  color: #ffffff;
+}
+
+/*@media only screen and (min-width: 800px) {
+  #colorCanvas {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  #colorCanvas {
+    width: 100%;
+  }
+}*/
+
+#langPattern {
+  color: #5d637a;
+  font-size: 20px;
+}
+
+#langPattern a {
+  color: #5d637a;
+}
+
+#enLang {
+  text-decoration: underline;
+}
+
+#deLang {
+  text-decoration: underline;
+}
+
+#imprint {
+  padding-left: 10px;
+}
+
+/*#opti {
+  font-size: 18px;
+  color: purple;
+  margin-bottom: 20px;
+  background-color: orange;
+}*/
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+  section.options {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    padding: 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: auto;
+    background-color: #313440;
+  }
+
+  body {
+    margin: 0 0 0 280px;
+  }
+
+  /*#opti {
+    display: none;
+  }*/
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .patternBtn {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  body {
+    padding: 10px;
+  }
+
+  footer {
+    padding-top: 0 !important;
+    padding-bottom: 50px;
+  }
+
+  #colorCanvas {
+    max-width: 98%;
+  }
+
+  button {
+    width: 90% !important;
+    text-align: center;
+  }
+}
+
+div.option {
+  margin: 30px 0 0 0;
+}
+
+label {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.patternBtn {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 20px 8px 20px;
+
+  border: solid #5d637a 2px;
+  text-decoration: none;
+  background-color: #313440;
+  width: 100%;
+}
+
+.patternBtn:hover {
+  background-color: #424657;
+}
+
+#saveImg {
+  height: 30px;
+  cursor: pointer;
+  /*  padding-left: 30px;*/
+}
+
+#home-button {
+  height: 30px;
+}
+
+#info-button {
+  height: 30px;
+  /*padding-left: 30px;*/
+}
+
+.option span {
+  padding-right: 40px;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+  /*box-shadow: 2px 2px 5px rgba(0,0,0,.1);*/
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+select {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  width: 100%;
+  color: #ffffff;
+  border-color: #5d637a;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #313440;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
+  /*remove arrow*/
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+  /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+
+select:hover {
+  background-color: #424657;
+}
+
+footer {
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.center {
+  text-align: center;
+}
+
+.pad-top-30 {
+  padding-top: 30px;
+}
+
+.pad-top-50 {
+  padding-top: 50px;
+}
+.pad-bot-50 {
+  padding-bottom: 50px;
+}
+
+.pad-bot-30 {
+  padding-bottom: 30px;
+}
+
+.float-right {
+  float: right;
+}
+
+.back {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/*#canvas-container {
+  width: 98%;
+  min-height: 100vh;
+}*/

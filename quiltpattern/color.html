@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Learn to Code 💻 Learn to Weave 🧵">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Quilt Patterns</title>
+
+  <link rel="stylesheet" href="CSS/stylecolor.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <section class="options">
+
+    <!--<div id="opti">
+      THIS TOOL IS OPTIMIZED FOR LARGE SCREENS.
+    </div>-->
+
+
+    <!--
+    <br>
+
+    <div><a href="../index.html" class="back">HOME</a></div>
+    -->
+    <div class="option pad-top-30" id="menu">
+
+      <img src="IMAGES/save-button.svg" alt="save-button" id="saveImg" onclick="saveImage()">
+      <!--<a href="information.html"><img src="IMAGES/info-button.svg" alt="info-button" id="info-button"></a>-->
+    </div>
+
+    <br>
+
+
+    <!--
+    <div class="option pad-top-50 pad-bot-30">
+      <span>COLOR 1</span><input type="color" id="col1" value="#313400" class="float-right">
+    </div>
+    <div class="option pad-bot-30">
+      <span>COLOR 2</span><input type="color" id="col2" value="#313400" class="float-right">
+    </div>
+    <div class="option pad-bot-30">
+      <span>COLOR 3</span><input type="color" id="col3" value="#313400" class="float-right">
+    </div>
+    <div class="option pad-bot-30">
+      <span>COLOR 4</span><input type="color" id="col4" value="#313400" class="float-right">
+    </div>
+    <div class="option pad-bot-50">
+      <span>COLOR 5</span><input type="color" id="col5" value="#313400" class="float-right">
+    </div>
+
+    <br>
+
+    <div>
+      OR CHOOSE RANDOM COLORS
+    </div>
+
+    <br />-->
+
+
+    <div class="option center">
+      <button type="button" class="btn patternBtn" id="randCol" onclick="randomColor()">NEW COLORS</button>
+    </div>
+
+    <br />
+
+    <div class="option center">
+      <button type="button" class="btn patternBtn" id="patternNoStroke" onclick="makePatternNoStroke()">CREATE
+        PATTERN</button>
+    </div>
+
+
+
+  </section>
+
+  <br>
+
+  <div class="centered pad-top-30" id="canvas-container">
+    <canvas id="colorCanvas">
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+  </div>
+
+
+
+
+  <script src="JS/color.js"></script>
+  <script src="JS/script.js"></script>
+
+</body>
+
+</html>

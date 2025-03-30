@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Quilt Colour Designer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Quilt Colour Designer</title>
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <nav id="sidebar">
+      <div class="option grid">
+        <label for="show-grid">Show grid:</label>
+        <input type="checkbox" id="show-grid" onchange="toggleGrid()" />
+      </div>
+
+      <div class="option">
+        <label for="base-color-select">Base Colour:</label>
+        <select id="base-color-select" onchange="generateNewColors()">
+          <option value="random">Random</option>
+          <!-- Die Optionen werden dynamisch hinzugefügt -->
+        </select>
+      </div>
+
+      <div class="option">
+        <label for="harmony-select">Colour scheme:</label>
+        <select
+          id="harmony-select"
+          onchange="updateColorCountOptions(); generateNewColors()"
+        >
+          <option value="random">Random colours</option>
+          <option value="monochromatic">Monochromatic colours</option>
+          <option value="analogous">Analog colours</option>
+          <option value="complementary">Complementary colours</option>
+          <option value="split-complementary">
+            Split complementary colours
+          </option>
+          <option value="triadic">Triadic colours</option>
+          <option value="tetradic">Tetradic colours</option>
+          <option value="square">Square colours</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <label for="color-count">Number of colours:</label>
+        <select id="color-count" onchange="generateNewColors()">
+          <!-- Die Optionen werden dynamisch hinzugefügt -->
+        </select>
+      </div>
+
+      <div class="option" id="distribution-option" style="display: none">
+        <label for="enable-distribution"
+          >Activate harmonious color distribution:</label
+        >
+        <input
+          type="checkbox"
+          id="enable-distribution"
+          onchange="generatePattern()"
+        />
+      </div>
+
+      <div class="option" id="neutral-checkbox-container">
+        <label for="neutral-checkbox">Add neutral colour:</label>
+        <input
+          type="checkbox"
+          id="neutral-checkbox"
+          onchange="generateNewColors()"
+        />
+      </div>
+
+      <div class="option">
+        <label for="grid-width">Width (Number of Quilt Blocks):</label>
+        <select id="grid-width" onchange="generatePattern()">
+          <option value="5">5</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <label for="grid-height">Height (Number of Quilt Blocks):</label>
+        <select id="grid-height" onchange="generatePattern()">
+          <option value="5">5</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <label for="canvas-width">Quilt Width (mm):</label>
+        <input
+          type="number"
+          id="canvas-width"
+          value="700"
+          min="100"
+          max="2590"
+          onchange="updateCanvasSize()"
+        />
+      </div>
+
+      <div class="option">
+        <label for="canvas-height">Quilt Height (mm):</label>
+        <input
+          type="number"
+          id="canvas-height"
+          value="700"
+          min="100"
+          max="2540"
+          onchange="updateCanvasSize()"
+        />
+      </div>
+
+      <div class="option">
+        <button onclick="generatePattern()">Generate new pattern</button>
+      </div>
+      <div class="option">
+        <button onclick="generateNewColors()">Generate new colours</button>
+      </div>
+      <div class="option"></div>
+      <button onclick="saveCanvas()">Save pattern</button>
+      <div class="option">
+        <button onclick="openModal()">
+          Save pattern and colour information
+        </button>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <!-- Bereich für die Canvas-Größe -->
+      <div class="size" id="canvas-size-info"></div>
+      <div id="canvas-container">
+        <canvas id="canvas" width="700" height="700"></canvas>
+        <div id="color-info"></div>
+      </div>
+    </main>
+
+    <!-- Modal for title input -->
+    <div
+      id="title-modal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div
+        style="
+          background: white;
+          padding: 20px;
+          border-radius: 5px;
+          text-align: center;
+        "
+      >
+        <h3>Enter Title</h3>
+        <input
+          type="text"
+          id="title-input"
+          placeholder="Enter your title here"
+          style="width: 100%; padding: 10px; margin-bottom: 10px"
+        />
+        <button onclick="submitTitle()">Submit</button>
+        <button onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- <script src="JS/colors_barragan.js"></script> -->
+    <!-- <script src="JS/colors_lecorbusier.js"></script> -->
+    <script src="JS/colors_selfmade_wonames.js"></script>
+    <!-- <script src="JS/colors.js"></script>  -->
+    <script src="JS/main.js"></script>
+  </body>
+</html>
